@@ -52,10 +52,9 @@ class Utility{
             unluckyDay = i+1;
         }
         console.log("Luckiest day is day : "+luckyDay+" and He won : "+high);
-        console.log("Unluckiest day is day : "+unluckyDay+" and He lost : "+low);
-    
-    
-    }    
+        console.log("Unluckiest day is day : "+unluckyDay+" and He lost : "+low);      
+    }  
+    while (winAmount>lostAmount);    
   }
 }
 module.exports = new Utility();
