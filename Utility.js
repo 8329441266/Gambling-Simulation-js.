@@ -22,7 +22,13 @@ class Utility{
         winAmount=winStake-stake;
         lostAmount=stake-lostStake;
         console.log("Win amount of day"+day+" is :"+winAmount+" and Lost amount of day"+day+" is :"+lostAmount);
-        day=day+1;
+        if( winAmount > lostAmount ){
+            console.log("Day"+day+" win by "+(winAmount-lostAmount));
+            }
+            else{
+                console.log("Day"+day+" lost by "+(lostAmount-winAmount));
+            }
+           day=day+1;
         }
     }
 }
